@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  background-color: #080423;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.content {
+  display: flex;
+  width: clamp(10%, 1256px, 100%);
+  height: 80px;
+  background-color: #080423;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name {
+  color: #ff3d81;
+  font: 400 40px "Bayon";
+  letter-spacing: 4px;
+  line-height: 100%;
+  margin: 20px;
+}
+
+.resetLink {
+  color: inherit;
+  text-decoration: none;
+  font: inherit;
+}
+
+.name:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .name {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    flex-direction: column;
+    height: 160px
+  }
+}

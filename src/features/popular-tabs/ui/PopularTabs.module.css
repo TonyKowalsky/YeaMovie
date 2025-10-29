@@ -1,0 +1,37 @@
+.tabs {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  min-width: 320px;
+  max-width: 1320px;
+  width: 100%;
+}
+
+.button {
+  width: 260px;
+  height: 44px;
+  border-radius: 60px;
+  background-color: white;
+  color: black;
+  font: 500 18px "Acrom";
+  border: none;
+  cursor: pointer;
+}
+
+.button.active {
+  background-color: #080423;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .button {
+    width: 180px;
+    font: 400 14px "Acrom";
+  }
+}
+
+@media (max-width: 690px) {
+  .tabs {
+    justify-content: center;
+  }
+}

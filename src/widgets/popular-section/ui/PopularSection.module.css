@@ -1,0 +1,33 @@
+.popular {
+  display: flex;
+  flex-direction: column;
+  background-color: inherit;
+  min-width: 320px;
+  max-width: 1320px;
+  min-height: 890px;
+  width: 100%;
+  overflow: hidden;
+  gap: 20px;
+  padding-top: 40px;
+}
+
+.movies {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.link {
+  color: #080423;
+}
+
+.dark {
+  background-color: #23272f;
+}
+
+@media (max-width: 1340px) {
+  .movies {
+    justify-content: space-around;
+  }
+}

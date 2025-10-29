@@ -1,0 +1,29 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button {
+  border: none;
+  color: #080423;
+  background-color: inherit;
+  font: 400 18px "Acrom";
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:disabled {
+  cursor: default;
+}
+
+.dark .button {
+  color: white;
+}
+
+.button.active {
+    font: 700 20px "Acrom";
+    text-decoration: solid;
+}

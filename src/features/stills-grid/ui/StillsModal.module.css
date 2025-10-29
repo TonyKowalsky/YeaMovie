@@ -1,0 +1,90 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-width: 80vw;
+  max-height: 80vh;
+  gap: 20px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.close {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0px;
+}
+
+.closeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 28px;
+  border-radius: 12px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  z-index: 1001;
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 28px;
+  cursor: pointer;
+  border-radius: 12px;
+  z-index: 1002;
+}
+
+.modalImage {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.counter {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4px 12px;
+  border-radius: 12px;
+}

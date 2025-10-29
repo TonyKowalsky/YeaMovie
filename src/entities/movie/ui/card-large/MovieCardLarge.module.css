@@ -1,0 +1,166 @@
+.card {
+  display: flex;
+  background-color: inherit;
+  min-width: 320px;
+  max-width: 1320px;
+  width: 100%;
+  gap: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 300px;
+  justify-content: flex-start;
+  gap: 20px;
+  max-height: 710px;
+  overflow-y: auto;
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 0 1 auto;
+  max-width: 500px;
+  width: auto;
+}
+
+.image {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.description {
+  font: 400 18px "Acrom";
+  padding-right: 10px;
+}
+
+.tableWrapper {
+  width: 100%;
+}
+
+.rating {
+  max-width: 190px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  color: #ffd233;
+  margin-top: 20px;
+  font: 500 16px "Acrom";
+}
+
+.title {
+  max-width: 570px;
+  font: 700 60px "Acrom";
+  text-align: left;
+  padding-top: 0;
+  hyphens: auto;
+  word-wrap: break-word;
+}
+
+.button {
+  min-width: 190px;
+  max-width: 190px;
+  height: 42px;
+  border-radius: 60px;
+  background-color: #ff3d81;
+  color: white;
+  font: 500 18px "Acrom";
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+.button:active {
+  transform: scale(0.95);
+  background-color: #7a7a7a;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding-right: 10px;
+}
+
+.details td {
+  width: 380px;
+  padding: 10px 0;
+  font: 400 18px "Acrom";
+  color: #7a7a7a;
+  vertical-align: top;
+}
+
+.details caption {
+  font: 700 40px "Acrom";
+  padding: 10px 0;
+  text-align: left;
+}
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: 36px;
+  }
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageWrapper {
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    width: auto;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  .description,
+  .details td {
+    font: 400 14px "Acrom";
+  }
+
+  .details caption {
+    font: 700 24px "Acrom";
+  }
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .content {
+    width: 100%;
+    text-align: left;
+  }
+
+  .button {
+    min-width: 120px;
+    max-width: 120px;
+    font: 400 14px "Acrom";
+  }
+
+  .rating {
+    max-width: 120px;
+    font: 400 12px "Acrom";
+  }
+}

@@ -1,0 +1,114 @@
+.recommendations {
+  margin-top: 40px;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transform: translateY(200px);
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  border: none;
+  background-color: inherit;
+  font: 400 40px "Acrom";
+  color: #7a7a7a;
+  height: 40px;
+}
+
+.button.dark {
+  fill: white;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:disabled {
+  cursor: default;
+}
+
+.button.prev {
+  transform: translateX(-10px);
+}
+
+.button.next {
+  transform: translateX(10px);
+}
+
+.name {
+  text-align: center;
+  margin: 60px 30px;
+  margin-bottom: 0px;
+  font: 500 20px "Acrom";
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font: 400 24px "Acrom";
+}
+
+@media (max-width: 1368px) {
+  .button.prev {
+    transform: translateX(-20px);
+  }
+
+  .button.next {
+    transform: translateX(20px);
+  }
+}
+
+@media (min-width: 1014px) and (max-width: 1100px) {
+  .button.prev {
+    transform: translateX(-20px);
+  }
+
+  .button.next {
+    transform: translateX(20px);
+  }
+}
+
+@media (min-width: 688px) and (max-width: 738px) {
+  .button.prev {
+    transform: translateX(-20px);
+  }
+
+  .button.next {
+    transform: translateX(20px);
+  }
+}
+
+@media (max-width:  768px) {
+  .error {
+    font: 400 14px "Acrom";
+  }
+}
+
+@media (max-width: 450px) {
+  .button.prev {
+    display: none;
+  }
+
+  .button.next {
+    display: none;
+  }
+
+  .name {
+    margin-bottom: 20px;
+  }
+}

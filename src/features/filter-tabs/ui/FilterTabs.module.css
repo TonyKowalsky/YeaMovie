@@ -1,0 +1,50 @@
+.tabs {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.customSelect {
+  width: 148px;
+  height: 39px;
+  border-radius: 60px;
+  font: 400 16px "Acrom";
+  color: #7a7a7a;
+  padding: 5px;
+  outline: none;
+}
+
+.customSelect:hover {
+  cursor: pointer;
+}
+
+.searchButton {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.searchButton.dark {
+  fill: white;
+}
+
+@media (max-width: 1100px) {
+  .tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    width: 180px;
+    font: 400 14px "Acrom";
+  }
+}
+
+@media (max-width: 553px) {
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+}

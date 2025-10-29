@@ -1,0 +1,104 @@
+.nowPlaying {
+  display: flex;
+  background-color: #080423;
+  min-width: 320px;
+  max-width: 1320px;
+  width: 100%;
+  border-radius: 10px;
+  gap: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  flex: 1;
+  min-width: 300px;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 auto;
+  max-width: 800px;
+  width: auto;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 800px;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.description {
+  font: 400 18px "Acrom";
+}
+
+.about {
+  margin: 40px 0;
+  padding-right: 20px;
+}
+
+.inCinema {
+  font: 700 30px "Montserrat";
+}
+.title {
+  font: 500 clamp(32px, 8vw, 60px) "Acrom";
+  hyphens: auto;
+  word-wrap: break-word;
+}
+
+.button {
+  width: 190px;
+  height: 42px;
+  border-radius: 60px;
+  background-color: #ff3d81;
+  color: white;
+  font: 500 18px "Acrom";
+  border: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.error {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  h3.title {
+    font-size: 36px;
+  }
+  h2.inCinema {
+    font-size: 24px;
+  }
+  .nowPlaying {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content {
+    width: 100%;
+    text-align: left;
+  }
+
+  .description {
+    font: 400 14px "Acrom";
+  }
+
+  .button {
+    width: 130px;
+    height: 30px;
+    font: 500 14px "Acrom";
+  }
+}

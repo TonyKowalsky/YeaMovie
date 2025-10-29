@@ -1,0 +1,14 @@
+.movies {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1320px;
+  padding-top: 0;
+}
+
+@media (max-width: 1360px) {
+  .movies {
+    justify-content: space-around;
+  }
+}

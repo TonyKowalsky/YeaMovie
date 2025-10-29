@@ -1,0 +1,193 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  max-width: 1320px;
+  min-width: 320px;
+  max-height: 573px;
+  width: 100%;
+  gap: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(8, 4, 35, 0.2);
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1 0 auto;
+  max-width: 390px;
+  max-height: 573px;
+  width: auto;
+  overflow: hidden;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.content {
+  display: flex;
+  max-width: 920px;
+  flex-direction: column;
+  gap: 20px;
+  height: 573px;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-between;
+  max-height: 145px;
+}
+
+.title {
+  max-width: 750px;
+  font: 700 60px "Acrom";
+  text-align: left;
+  padding-top: 0;
+  padding-right: 10px;
+  hyphens: auto;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.info {
+  max-height: 500px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 10px;
+}
+
+.description {
+  font: 400 18px "Acrom";
+  /* max-height: 190px;
+  overflow-y: auto; */
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 190px;
+  max-width: 200px;
+  height: 42px;
+  border-radius: 60px;
+  background-color: #ff3d81;
+  color: white;
+  font: 500 18px "Acrom";
+  border: none;
+}
+
+.button:active {
+  transform: scale(0.95);
+  background-color: #7a7a7a;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.details td {
+  width: 440px;
+  padding: 5px 0;
+  font: 400 18px "Acrom";
+  color: #7a7a7a;
+  vertical-align: top;
+}
+
+.rating {
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  color: #ffd233;
+  margin-top: 20px;
+  font: 500 16px "Acrom";
+}
+
+@media (max-width: 1360px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    max-height: 1100px;
+  }
+
+  .content {
+    padding: 10px 10px;
+    min-width: 320px;
+  }
+
+  .header {
+    gap: 0;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .imageWrapper {
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex: 1 1 auto;
+    max-width: 320px;
+  }
+
+  .description,
+  .details td {
+    font: 400 14px "Acrom";
+  }
+}
+
+@media (max-width: 1200px) {
+  .content {
+    width: 100%;
+    text-align: left;
+  }
+
+  .button {
+    min-width: 120px;
+    max-width: 120px;
+    font: 400 14px "Acrom";
+  }
+
+  .rating {
+    max-width: 120px;
+    font: 400 12px "Acrom";
+  }
+}
