@@ -14,8 +14,14 @@
   background-color: white;
   color: black;
   font: 500 18px "Acrom";
+  background-color: inherit;
   border: none;
   cursor: pointer;
+  padding: 0 10px;
+}
+
+.button.dark {
+  color: white;
 }
 
 .button.active {

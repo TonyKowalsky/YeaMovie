@@ -20,7 +20,7 @@ const PopularTabs = ({ tabs, activeTab }: PopularTabsProps) => {
           key={tab.type}
           className={`${styles.button} ${
             activeTab === tab.type ? styles.active : ""
-          }`}
+          } ${isDark ? styles.dark : ""}`}
           onClick={tab.onClick}
         >
           {tab.name}
